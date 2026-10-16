@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/styles.css?v=1" />
+<link rel="stylesheet" href="css/styles.css?v=2" />
 </head>
 <body>
 <div class="app">
@@ -56,7 +56,7 @@
           <img class="door-thumb" src="assets/sophie.png" alt="" width="48" height="48" />
           <span class="door-body">
             <span class="door-title">Play the games</span>
-            <span class="door-desc">Pyrenees Guard, Barncat Defender, and more.</span>
+            <span class="door-desc">Guard-dog game, barn-cat game, and more.</span>
           </span>
           <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
         </a>
@@ -98,13 +98,13 @@
       <section class="panel" id="panel-games" aria-label="Games">
         <div class="section-head">
           <h2>Farm games</h2>
-          <p>Same Critters Play arcade kids love — Sophie, Gus &amp; Betty guard the barn; barn cats keep the hay clear.</p>
+          <p>Same Critters Play arcade kids love — livestock guardian dogs guard the barn; barn cats keep the hay clear.</p>
         </div>
         <a class="door" href="https://code4crittersoncallapps.github.io/critters-play/pyrenees-guard.html" target="_blank" rel="noopener">
           <img class="door-thumb" src="assets/sophie.png" alt="" width="48" height="48" />
           <span class="door-body">
             <span class="door-title">Pyrenees Guard</span>
-            <span class="door-desc">Sophie, Gus &amp; Betty defend the red barn under the live oak.</span>
+            <span class="door-desc">Great Pyrenees defend the red barn under the live oak.</span>
           </span>
           <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
         </a>
@@ -120,7 +120,7 @@
           <span class="door-emoji" aria-hidden="true">🦆</span>
           <span class="door-body">
             <span class="door-title">Evade Elon</span>
-            <span class="door-desc">Feed the crew. Don't let Elon Muscovy steal the grain.</span>
+            <span class="door-desc">Feed the crew. Don't let the Muscovy steal the grain.</span>
           </span>
           <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
         </a>
@@ -380,10 +380,10 @@
 
   /* 25 kid-friendly facts */
   var FACTS = [
-    { e: "🐐", t: "Goats", title: "Boys corral travel set", body: "Kneepad Senior, Gomez, Dunkaroo, and Romeo often travel together as a set of four for Critters on Call visits — about 30–40 lb each." },
-    { e: "🐐", t: "Goats", title: "Divvy means Dividends", body: "Divvy is short for Dividends — an S-tier Nigerian Dwarf standout for kid-friendly farm visits, alongside Kneepads Junior." },
-    { e: "🐐", t: "Goats", title: "Zip is clever", body: "Zip is noted as very smart — watch her. Clever goats figure out gates before you do." },
-    { e: "🐐", t: "Goats", title: "Dolly travels", body: "In the Shania–Moses–Dolly trio, only Dolly is comfortable going off-farm. Shania and Moses prefer to stay home." },
+    { e: "🐐", t: "Goats", title: "Boys corral travel set", body: "A set of four boy goats often travel together for Critters on Call visits — about 30–40 lb each." },
+    { e: "🐐", t: "Goats", title: "Nigerian Dwarf standouts", body: "Our Nigerian Dwarf goats are S-tier for kid-friendly farm visits — small, calm, and easy to hold." },
+    { e: "🐐", t: "Goats", title: "Clever goats", body: "Some goats are very smart — watch the clever ones. They figure out gates before you do." },
+    { e: "🐐", t: "Goats", title: "Not every goat travels", body: "In some trios, only one goat is comfortable going off-farm. The others prefer to stay home." },
     { e: "🐰", t: "Bunnies", title: "Colony life", body: "Our rabbits live together in a bunny hut as a colony — social, not solo cages. Guests often rehome bunnies to us." },
     { e: "🐰", t: "Bunnies", title: "Teeth never stop", body: "A rabbit's teeth grow their whole life. They need hay, wood, or safe chew toys so teeth stay the right length." },
     { e: "🐰", t: "Bunnies", title: "Binkies mean happy", body: "A binky is a jump-twist-kick in the air. When a bunny does that, they're excited and happy!" },
@@ -391,13 +391,13 @@
     { e: "🐰", t: "Bunnies", title: "About a dozen", body: "The homestead keeps roughly ~12 bunnies — soft, calm, and perfect for gentle hands." },
     { e: "🐰", t: "Bunnies", title: "Never by the ears", body: "Never pick up a bunny by the ears. Support the chest and the hindquarters — the caboose!" },
     { e: "🦆", t: "Ducks", title: "About ~20 ducks", body: "The homestead keeps about ~20 ducks — Pekin-heavy, plus runners, mallards, and Muscovy." },
-    { e: "🦆", t: "Ducks", title: "Elon Muscovy", body: "Elon is a Muscovy duck (star of Evade Elon). Halle Berry is his named Muscovy pair kids remember." },
+    { e: "🦆", t: "Ducks", title: "Muscovy stars", body: "A Muscovy duck stars in Evade Elon. Muscovy pairs are easy for kids to remember on farm visits." },
     { e: "🦆", t: "Ducks", title: "Muscovies hiss", body: "Muscovy ducks hiss more than they quack — a fun fact kids learn in Critters Play." },
     { e: "🐔", t: "Chickens", title: "Serama, Silkie & RIR", body: "Petting-zoo chickens include tiny Serama show birds, fluffy Silkies, and classic Rhode Island Reds." },
     { e: "🐔", t: "Chickens", title: "About ~10 zoo chickens", body: "About ~10 petting-zoo chickens travel with Critters on Call and Ann-Marie's STEM framing." },
     { e: "🐔", t: "Chickens", title: "Silkies are fluffy", body: "Silkies are famous for fluffy feathers that feel like soft fur — kids love gentle pets." },
-    { e: "🐕", t: "Pyrenees", title: "Sophie leads", body: "Sophie is the Lead Guardian Great Pyrenees. With Gus and Betty she watches the red barn under the live oak." },
-    { e: "🐕", t: "Pyrenees", title: "Guardian trio", body: "Sophie, Gus, and Betty are the Pyr guardian trio. In Pyrenees Guard, kids unlock Gus and Betty as scores climb." },
+    { e: "🐕", t: "Pyrenees", title: "Lead guardian", body: "A Lead Guardian Great Pyrenees watches the red barn under the live oak — soft with kids, serious about the herd." },
+    { e: "🐕", t: "Pyrenees", title: "Guardian trio", body: "A trio of Great Pyrenees guards the homestead. In Pyrenees Guard, kids unlock more guardian dogs as scores climb." },
     { e: "🐕", t: "Pyrenees", title: "Livestock guardians", body: "Great Pyrenees were bred to guard flocks. Soft with kids, serious about the herd — that's the homestead vibe." },
     { e: "🐷", t: "Piglets", title: "Meet the swine", body: "Piglet visits are a try-a-new-service favorite — curious noses, short cuddles, and lots of giggles." },
     { e: "🐹", t: "Guinea pigs", title: "Wheek for treats", body: "Guinea pigs often wheek (a happy squeak) when they hear food bags — they recognize routines fast." },
