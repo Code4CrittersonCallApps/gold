@@ -1,6 +1,6 @@
 # Gold · Sheehan Homestead
 
-Lead-magnet Gold access app: farm games (links to Critters Play), how to hold the animals, 25 kid facts, and a referral prize wheel (Durbin/Vesta-class Stead Spin prizes).
+Lead-magnet Gold access app: farm games (links to Critters Play), how to hold the animals, 25 kid facts, and a referral prize wheel (Stead Spin prizes).
 
 - Live: https://code4crittersoncallapps.github.io/gold/
 - Personalized gift: `?for=Lisa` → “Gifted to Miss Lisa, thank you for your review”
