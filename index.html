@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#c9a227" />
-<meta name="description" content="Sheehan Homestead Gold — farm games, how to hold the animals, 25 kid facts, and a referral prize wheel. Callahan, FL." />
+<meta name="description" content="Sheehan Homestead Gold — three farm games (earn, calm down, focus), lessons, member perks, and the Violet ticket. Callahan, FL." />
 <meta property="og:title" content="Gold · Sheehan Homestead" />
 <meta property="og:description" content="Play, learn, spin & share. Gifted farm fun from Critters on Call." />
 <meta property="og:image" content="assets/gold-card.jpg" />
@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/styles.css?v=3" />
+<link rel="stylesheet" href="css/styles.css?v=4" />
 </head>
 <body>
 <div class="app">
@@ -37,53 +37,51 @@
         <p id="gift-note">Thank you for your review. This Gold access is yours — play, learn, spin, and share with a friend.</p>
       </div>
 
-      <!-- HOME -->
+      <!-- HOME: four clean tiles, each with a cliff note. Click to drill down. -->
       <section class="panel is-on" id="panel-home" aria-label="Home">
         <div class="hero-card">
           <img src="assets/gold-card.jpg" alt="Critters on Call Gold membership card" width="1200" height="760" />
           <div class="hero-body">
-            <h1>Welcome to Gold</h1>
-            <p class="lede">Farm games, how to hold our animals, 25 kid-friendly facts, and a referral wheel with real prizes. Spin a prize — then share the link with a friend.</p>
-            <div class="pill-row">
-              <span class="pill">Games</span>
-              <span class="pill">How to hold</span>
-              <span class="pill">25 facts</span>
-              <span class="pill">Referral wheel</span>
-            </div>
+            <h1>Your Gold pass</h1>
+            <p class="lede">Games for real kid moments, farm lessons, your perks, and the good your card does.</p>
           </div>
         </div>
         <a class="door" href="#games" data-nav="games">
-          <img class="door-thumb" src="assets/sophie.png" alt="" width="48" height="48" />
+          <span class="door-emoji" aria-hidden="true">🎮</span>
           <span class="door-body">
-            <span class="door-title">Play the games</span>
-            <span class="door-desc">Guard-dog game, barn-cat game, and more.</span>
+            <span class="door-tag">3 games + 1 coming</span><span class="door-title">Games</span>
+            <span class="door-desc">Earn, calm down, or focus. One game for each.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
-        <a class="door" href="#hold" data-nav="hold">
-          <span class="door-emoji" aria-hidden="true">🤲</span>
+        <a class="door" href="#lessons" data-nav="lessons">
+          <span class="door-emoji" aria-hidden="true">📖</span>
           <span class="door-body">
-            <span class="door-title">How to hold the animals</span>
-            <span class="door-desc">Step-by-step for goats, bunnies, chickens &amp; more.</span>
+            <span class="door-tag">Learn</span><span class="door-title">Lessons</span>
+            <span class="door-desc">How to hold animals safely, animal facts, and a matching lesson.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
-        <a class="door" href="#facts" data-nav="facts">
-          <span class="door-emoji" aria-hidden="true">📚</span>
+        <a class="door" href="#perks" data-nav="perks">
+          <span class="door-emoji" aria-hidden="true">🎫</span>
           <span class="door-body">
-            <span class="door-title">25 farm animal facts</span>
-            <span class="door-desc">Kid-friendly true stories from our Callahan herd.</span>
+            <span class="door-tag">What's included</span><span class="door-title">Perks</span>
+            <span class="door-desc">Free $25 farm ticket, free $25 farm gift, about 40% off mobile visits.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
-        <a class="door" href="#wheel" data-nav="wheel">
-          <span class="door-emoji" aria-hidden="true">🎡</span>
+        <a class="door" href="#giving" data-nav="giving">
+          <span class="door-emoji" aria-hidden="true">💜</span>
           <span class="door-body">
-            <span class="door-title">Referral wheel</span>
-            <span class="door-desc">Spin a prize. Share with a friend. Claim at the farm.</span>
+            <span class="door-tag">Our work</span><span class="door-title">Giving &amp; our work</span>
+            <span class="door-desc">The Violet ticket for schools, churches and families in need.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
+        <div class="strip">
+          <div class="kicker">One pass, every event</div>
+          <p>This is the first version of our member pass for big events. The same card, games and perks will work at the farm, at a festival, or with a stadium crowd.</p>
+        </div>
         <div class="btn-row">
           <button class="btn btn-outline btn-block" type="button" id="share-home">Share Gold with a friend</button>
           <a class="btn btn-primary btn-block" href="https://www.sheehanhomestead.com/services" target="_blank" rel="noopener">See services &amp; book</a>
@@ -94,50 +92,148 @@
         </p>
       </section>
 
-      <!-- GAMES -->
+      <!-- GAMES: rendered from js/gold-config.js (3 core + 1 swap-in slot) -->
       <section class="panel" id="panel-games" aria-label="Games">
         <div class="section-head">
-          <h2>Farm games</h2>
-          <p>Same Critters Play arcade kids love — livestock guardian dogs guard the barn; barn cats keep the hay clear.</p>
+          <a class="back-up" href="#home" data-nav="home">← Home</a>
+          <h2>Gold games</h2>
+          <p>Pick the game for the moment: earn something, calm down, or focus.</p>
         </div>
-        <a class="door" href="https://code4crittersoncallapps.github.io/critters-play/pyrenees-guard.html" target="_blank" rel="noopener">
-          <img class="door-thumb" src="assets/sophie.png" alt="" width="48" height="48" />
+        <div id="games-list"></div>
+        <details class="fine">
+          <summary>How earning works</summary>
+          <p>Beat a game's score in one run and Stead Spin opens on that game. Prizes are real and claimed in person at the farm, like a petting zoo visit or a farm gift. Show the screen.</p>
+          <p>A Gold reward token is coming soon. Nothing to buy and nothing to connect today.</p>
+          <p><a href="#wheel" data-nav="wheel">Referral wheel →</a></p>
+        </details>
+        <p class="footer-tiny"><a href="https://code4crittersoncallapps.github.io/critters-play/" target="_blank" rel="noopener">More games in the free Critters Play arcade</a> (Ducks to Bed and more)</p>
+      </section>
+
+      <!-- LESSONS -->
+      <section class="panel" id="panel-lessons" aria-label="Lessons">
+        <div class="section-head">
+          <a class="back-up" href="#home" data-nav="home">← Home</a>
+          <h2>Lessons</h2>
+          <p>Short, real farm lessons. Read them before a visit and the animals will thank you.</p>
+        </div>
+        <a class="door" href="#hold" data-nav="hold">
+          <span class="door-emoji" aria-hidden="true">🤲</span>
           <span class="door-body">
-            <span class="door-title">Pyrenees Guard</span>
-            <span class="door-desc">Great Pyrenees defend the red barn under the live oak.</span>
+            <span class="door-tag">Safety first</span><span class="door-title">How to hold animals safely</span>
+            <span class="door-desc">Goats, bunnies, chickens, ducks, piglets and more, step by step.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
-        <a class="door" href="https://code4crittersoncallapps.github.io/critters-play/barn-cat.html" target="_blank" rel="noopener">
-          <span class="door-emoji" aria-hidden="true">🐈‍⬛</span>
+        <a class="door" href="#facts" data-nav="facts">
+          <span class="door-emoji" aria-hidden="true">📚</span>
           <span class="door-body">
-            <span class="door-title">Barncat Defender</span>
-            <span class="door-desc">Whack mice &amp; snakes popping from the hay.</span>
+            <span class="door-tag">25 facts</span><span class="door-title">Animal facts</span>
+            <span class="door-desc">25 true, kid-friendly facts from our Callahan herd.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
-        <a class="door" href="https://code4crittersoncallapps.github.io/critters-play/evade-elon.html" target="_blank" rel="noopener">
-          <span class="door-emoji" aria-hidden="true">🦆</span>
+        <a class="door" href="https://code4crittersoncallapps.github.io/critters-play/critter-match.html" target="_blank" rel="noopener">
+          <span class="door-emoji" aria-hidden="true">🎯</span>
           <span class="door-body">
-            <span class="door-title">Evade Elon</span>
-            <span class="door-desc">Feed the crew. Don't let the Muscovy steal the grain.</span>
+            <span class="door-tag">Matching</span><span class="door-title">Matching lesson: Critter Match</span>
+            <span class="door-desc">Match our animals to learn their names and faces.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
-        <a class="door" href="https://code4crittersoncallapps.github.io/critters-play/" target="_blank" rel="noopener">
-          <span class="door-emoji" aria-hidden="true">🎮</span>
+        <a class="door" href="https://code4crittersoncallapps.github.io/critters-play/farm-school/" target="_blank" rel="noopener">
+          <span class="door-emoji" aria-hidden="true">🏫</span>
           <span class="door-body">
-            <span class="door-title">Full Critters Play hub</span>
-            <span class="door-desc">Ducks to Bed, Critter Match, and the whole arcade.</span>
+            <span class="door-tag">5 lessons</span><span class="door-title">Farm School</span>
+            <span class="door-desc">Five short lessons a parent can do with a kid, then a five-question check.</span>
           </span>
-          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
-        <button class="btn btn-ghost btn-block" type="button" data-nav="wheel" style="margin-top:0.5rem">Done playing? Spin the referral wheel →</button>
+      </section>
+
+      <!-- PERKS: wording from the Gold talk track (bdr/scripts/06_gold_card_pitch.md) and pricing.html -->
+      <section class="panel" id="panel-perks" aria-label="Perks">
+        <div class="section-head">
+          <a class="back-up" href="#home" data-nav="home">← Home</a>
+          <h2>What's included in Gold</h2>
+          <p>Show your Gold screen at the farm or mention it when you book.</p>
+        </div>
+        <a class="door" href="https://code4crittersoncallapps.github.io/critters-on-call/book/?product=farm-pair-ticket" target="_blank" rel="noopener">
+          <span class="door-emoji" aria-hidden="true">🎟️</span>
+          <span class="door-body">
+            <span class="door-tag">Included</span><span class="door-title">Free $25 farm ticket</span>
+            <span class="door-desc">A free 2-person farm visit (our $25 Visit Us ticket).</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="door" href="https://www.sheehanhomestead.com/services" target="_blank" rel="noopener">
+          <span class="door-emoji" aria-hidden="true">🎁</span>
+          <span class="door-body">
+            <span class="door-tag">Included</span><span class="door-title">Free $25 farm gift</span>
+            <span class="door-desc">A $25 farm gift credit. Pick it up at the homestead.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="door" href="https://code4crittersoncallapps.github.io/critters-on-call/book/?product=critter-gold" target="_blank" rel="noopener">
+          <span class="door-emoji" aria-hidden="true">🚚</span>
+          <span class="door-body">
+            <span class="door-tag">Member pricing</span><span class="door-title">About 40% off mobile visits, camps &amp; field trips</span>
+            <span class="door-desc">Member pricing when we come to you, plus camps and field trips.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <details class="fine">
+          <summary>The fine print</summary>
+          <p>Mobile visits: 25% off services and 50% off travel, which works out to about 40% off a typical visit. Ask us for your member price on camps and field trips.</p>
+          <p>Joining for $50? The $50 goes toward your next mobile or farm booking.</p>
+          <p>Founding Gold: the first 1,000 people who spend $1 or more get a numbered Founding card.</p>
+        </details>
+        <a class="door" href="#wheel" data-nav="wheel">
+          <span class="door-emoji" aria-hidden="true">🎡</span>
+          <span class="door-body">
+            <span class="door-tag">Bonus</span><span class="door-title">Referral wheel</span>
+            <span class="door-desc">Spin a prize, then share Gold with a friend.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </section>
+
+      <!-- GIVING / OUR WORK -->
+      <section class="panel" id="panel-giving" aria-label="Giving and our work">
+        <div class="section-head">
+          <a class="back-up" href="#home" data-nav="home">← Home</a>
+          <h2>Giving &amp; our work</h2>
+          <p>Your Gold card helps us bring animals to kids who don't get to see them.</p>
+        </div>
+        <a class="door" href="https://code4crittersoncallapps.github.io/critters-on-call/book/?product=violet-card" target="_blank" rel="noopener">
+          <span class="door-emoji" aria-hidden="true">💜</span>
+          <span class="door-body">
+            <span class="door-tag">Giving</span><span class="door-title">Violet ticket</span>
+            <span class="door-desc">Named for our daughter, Violet. A discounted rate for schools, churches and families in need.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="door" href="https://www.sheehanhomestead.com/services" target="_blank" rel="noopener">
+          <span class="door-emoji" aria-hidden="true">🌳</span>
+          <span class="door-body">
+            <span class="door-tag">Our work</span><span class="door-title">The work we do</span>
+            <span class="door-desc">Mobile petting zoos, farm visits, STEM on Call classes, homeschool, camps and calm bunny visits for seniors.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="door" href="sms:9142631311">
+          <span class="door-emoji" aria-hidden="true">💬</span>
+          <span class="door-body">
+            <span class="door-tag">Refer</span><span class="door-title">Know a school or church?</span>
+            <span class="door-desc">Text us at 914-263-1311 and we'll reach out.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
       </section>
 
       <!-- HOLD -->
       <section class="panel" id="panel-hold" aria-label="How to hold">
         <div class="section-head">
+          <a class="back-up" href="#lessons" data-nav="lessons">← Lessons</a>
           <h2>How to hold the animals</h2>
           <p>Calm voice. Soft hands. Always with a grown-up nearby. Same protocol we teach helpers on Critters on Call.</p>
         </div>
@@ -147,6 +243,7 @@
       <!-- FACTS -->
       <section class="panel" id="panel-facts" aria-label="Facts">
         <div class="section-head">
+          <a class="back-up" href="#lessons" data-nav="lessons">← Lessons</a>
           <h2>25 farm animal facts</h2>
           <p>Real herd knowledge from Sheehan Homestead — goats, ducks, Pyrenees, chickens, bunnies, and more.</p>
         </div>
@@ -156,6 +253,7 @@
       <!-- WHEEL -->
       <section class="panel" id="panel-wheel" aria-label="Referral wheel">
         <div class="section-head">
+          <a class="back-up" href="#perks" data-nav="perks">← Perks</a>
           <h2>Referral wheel</h2>
           <p>Spin for a generous prize. Then share Gold with a friend — the share link is always the generic Gold page.</p>
         </div>
@@ -185,26 +283,31 @@
   <nav class="bottom-nav" aria-label="Primary">
     <div class="bottom-nav-inner">
       <a class="nav-link is-active" href="#home" data-nav="home">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         Home
       </a>
       <a class="nav-link" href="#games" data-nav="games">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"/></svg>
         Games
       </a>
-      <a class="nav-link" href="#hold" data-nav="hold">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 15 6 6"/></svg>
-        Hold
+      <a class="nav-link" href="#lessons" data-nav="lessons">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg>
+        Lessons
       </a>
-      <a class="nav-link" href="#wheel" data-nav="wheel">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
-        Spin
+      <a class="nav-link" href="#perks" data-nav="perks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9a2 2 0 0 0 0 6v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3a2 2 0 0 0 0-6V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"/><path d="M13 5v14"/></svg>
+        Perks
+      </a>
+      <a class="nav-link" href="#giving" data-nav="giving">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        Giving
       </a>
     </div>
   </nav>
 </div>
 <div class="share-toast" id="share-toast" role="status">Link copied</div>
 
+<script src="js/gold-config.js?v=4"></script>
 <script>
 (function () {
   var PLAY = "https://code4crittersoncallapps.github.io/critters-play/";
@@ -267,8 +370,48 @@
   document.getElementById("share-home").addEventListener("click", shareGold);
   document.getElementById("share-win").addEventListener("click", shareGold);
 
+  /* Gold games, from js/gold-config.js */
+  (function renderGames() {
+    var list = document.getElementById("games-list");
+    var games = window.GOLD_GAMES || [];
+    var base = window.GOLD_PLAY || PLAY;
+    var chev = '<svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+    function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    games.forEach(function (g) {
+      var live = g.status === "live" && g.href;
+      var icon = g.thumb
+        ? '<img class="door-thumb" src="' + esc(g.thumb) + '" alt="" width="48" height="48" />'
+        : '<span class="door-emoji" aria-hidden="true">' + esc(g.emoji || "🎮") + "</span>";
+      var body =
+        icon +
+        '<span class="door-body">' +
+        '<span class="door-tag tone-' + esc(g.tone || "soon") + '">' + esc(g.problem) + "</span>" +
+        '<span class="door-title">' + esc(g.title) + "</span>" +
+        '<span class="door-solves">' + esc(g.solves) + "</span>" +
+        '<span class="door-desc">' + esc(g.note) + "</span>" +
+        "</span>";
+      var el;
+      if (live) {
+        el = document.createElement("a");
+        el.href = /^https?:/.test(g.href) ? g.href : base + g.href;
+        el.target = "_blank";
+        el.rel = "noopener";
+        el.innerHTML = body + chev;
+      } else {
+        el = document.createElement("div");
+        el.setAttribute("aria-disabled", "true");
+        el.innerHTML = body;
+      }
+      el.className = "door door-game" + (live ? "" : " is-soon");
+      el.setAttribute("data-game", g.id);
+      list.appendChild(el);
+    });
+  })();
+
   /* Tabs */
-  var panels = ["home", "games", "hold", "facts", "wheel"];
+  var panels = ["home", "games", "lessons", "perks", "giving", "hold", "facts", "wheel"];
+  /* Sub-panels light up their parent tab */
+  var NAV_PARENT = { hold: "lessons", facts: "lessons", wheel: "perks" };
   function showPanel(id) {
     if (panels.indexOf(id) < 0) id = "home";
     panels.forEach(function (p) {
@@ -276,14 +419,13 @@
       if (el) el.classList.toggle("is-on", p === id);
     });
     document.querySelectorAll(".nav-link").forEach(function (a) {
-      a.classList.toggle("is-active", a.getAttribute("data-nav") === id);
+      a.classList.toggle("is-active", a.getAttribute("data-nav") === (NAV_PARENT[id] || id));
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
   function navFromHash() {
     var h = (location.hash || "#home").replace(/^#/, "") || "home";
-    if (h === "facts" || h === "hold" || h === "games" || h === "wheel" || h === "home") showPanel(h);
-    else showPanel("home");
+    showPanel(panels.indexOf(h) >= 0 ? h : "home");
   }
   document.querySelectorAll("[data-nav]").forEach(function (el) {
     el.addEventListener("click", function (e) {
