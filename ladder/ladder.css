@@ -1,0 +1,69 @@
+/* Concept preview only. Shares the Gold shell (../css/styles.css). */
+.concept-badge { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.25rem 0.5rem; border-radius: 999px; border: 1px dashed var(--gold-ring); color: var(--gold); white-space: nowrap; }
+.site-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.ladder-nav { grid-template-columns: repeat(6, 1fr) !important; }
+.nav-ico { font-size: 1.1rem; line-height: 1; }
+.nav-link.is-active { color: var(--skin, var(--gold)); }
+.lede-sm { font-size: 0.9rem; color: var(--muted); margin: 0.2rem 0 0; line-height: 1.45; }
+h1.page { font-family: var(--display); font-size: 1.55rem; margin: 0.2rem 0 0; color: var(--skin, var(--accent)); }
+.rung { position: relative; }
+.rung .door-tag { color: var(--skin, var(--gold)); }
+.rung-num { position: absolute; left: -0.4rem; top: -0.4rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--skin, var(--gold)); color: #14120f; font-size: 0.72rem; font-weight: 800; display: grid; place-items: center; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.35rem; }
+.chip { font-size: 0.68rem; font-weight: 600; padding: 0.15rem 0.45rem; border-radius: 999px; background: var(--surface-2); color: var(--fg); border: 1px solid var(--border); }
+.chip.also { border-color: var(--gold-ring); color: var(--gold); }
+.chip.blank { border-style: dashed; color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.85rem 0.95rem; }
+.card h3 { margin: 0 0 0.3rem; font-size: 1rem; }
+.card p { margin: 0.2rem 0; font-size: 0.88rem; color: var(--muted); line-height: 1.45; }
+.kick { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--skin, var(--gold)); }
+.pay { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 0.4rem; }
+.pay button { background: var(--surface-2); border: 1px solid var(--border); border-radius: 0.7rem; padding: 0.55rem 0.3rem; color: var(--fg); font: inherit; cursor: pointer; text-align: center; }
+.pay button b { display: block; font-size: 1.05rem; margin-top: 0.1rem; }
+.pay button small { font-size: 0.68rem; color: var(--muted); }
+.pay button.is-on { border-color: var(--skin, var(--gold)); box-shadow: 0 0 0 1px var(--skin, var(--gold)) inset; }
+.toggle { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem; background: var(--surface-2); border-radius: 0.8rem; padding: 0.25rem; margin-top: 0.4rem; }
+.toggle button { border: 0; border-radius: 0.6rem; padding: 0.55rem 0.4rem; background: transparent; color: var(--muted); font: inherit; font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+.toggle button.is-on { background: var(--skin, var(--gold)); color: #14120f; }
+.blank-line { display: inline-block; min-width: 2.6rem; border-bottom: 2px dashed var(--muted); text-align: center; color: var(--muted); font-weight: 700; }
+.progress { height: 0.5rem; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin-top: 0.4rem; }
+.progress > i { display: block; height: 100%; width: 0; background: var(--skin, var(--gold)); transition: width 0.3s; }
+.check { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.92rem; }
+.check:last-child { border-bottom: 0; }
+.check input { width: 1.2rem; height: 1.2rem; accent-color: var(--skin, var(--gold)); }
+.badge-big { text-align: center; padding: 0.9rem; border-radius: var(--radius); border: 1px dashed var(--border); }
+.badge-big .em { font-size: 2.4rem; filter: grayscale(1); opacity: 0.45; transition: all 0.3s; }
+.badge-big.is-earned { border-color: var(--skin, var(--gold)); }
+.badge-big.is-earned .em { filter: none; opacity: 1; }
+.btn[aria-disabled="true"] { opacity: 0.45; pointer-events: none; }
+.note { font-size: 0.78rem; color: var(--subtle); line-height: 1.4; margin: 0.3rem 0 0; }
+.teach { display: flex; gap: 0.7rem; align-items: center; }
+.teach .av { width: 3rem; height: 3rem; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; font-size: 1.4rem; flex-shrink: 0; border: 1px solid var(--border); }
+.names li { margin: 0.35rem 0; font-size: 0.9rem; }
+.names li b { color: var(--fg); }
+.hero-img { width: 100%; border-radius: var(--radius); border: 1px solid var(--border); display: block; }
+/* skins */
+body.skin-gold { --skin: #c9a227; }
+body.skin-hub { --skin: #7cc28a; }
+body.skin-plus { --skin: #b79cf2; }
+body.skin-herd { --skin: #e0a45a; }
+body.skin-custom { --skin: #f0d78c; }
+body.skin-helper { --skin: #6fb3d9; }
+/* funnel map */
+.fmap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.8rem; display: flex; flex-direction: column; align-items: stretch; }
+.fnode { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0.7rem; border-radius: 0.75rem; background: var(--surface-2); border: 1px solid var(--border); text-decoration: none; color: var(--fg); }
+.fnode b { display: block; font-size: 0.92rem; }
+.fnode small { display: block; font-size: 0.72rem; color: var(--muted); line-height: 1.3; }
+.fnode .fem { font-size: 1.25rem; width: 1.8rem; text-align: center; flex-shrink: 0; }
+.fnode.is-free { border-color: #6a9e6a; }
+.fnode.is-gold { border-color: #c9a227; }
+.fnode.is-hub { border-color: #7cc28a; }
+.fnode.is-herd { border-color: #e0a45a; border-style: dashed; }
+.fnode.is-top { border-color: #f0d78c; box-shadow: 0 0 0 1px rgba(240,215,140,0.35) inset; }
+.farrow { text-align: center; color: var(--subtle); font-size: 0.9rem; line-height: 1; margin: 0.15rem 0; }
+.fside-label { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0.7rem 0 0.35rem; border-top: 1px dashed var(--border); padding-top: 0.55rem; }
+.fside { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+.fside .fnode { padding: 0.45rem 0.5rem; }
+.toggle-3 { grid-template-columns: 1fr 1fr 1fr; }
+.toggle-3 button { font-size: 0.74rem; padding: 0.5rem 0.2rem; }
+body.skin-ehub { --skin: #8fd1c4; }
