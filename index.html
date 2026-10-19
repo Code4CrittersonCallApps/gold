@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/styles.css?v=4" />
+<link rel="stylesheet" href="css/styles.css?v=5" />
 </head>
 <body>
 <div class="app">
@@ -34,7 +34,8 @@
       <div class="gift-banner" id="gift-banner" role="status">
         <div class="kicker">Personal gift</div>
         <h2 id="gift-title">Gifted to Miss Lisa</h2>
-        <p id="gift-note">Thank you for your review. This Gold access is yours — play, learn, spin, and share with a friend.</p>
+        <p id="gift-note">A gift from Sheehan Homestead. This Gold access is yours: play, learn, spin, and share with a friend.</p>
+        <a class="btn btn-primary btn-block" id="gift-cta" href="#wheels" data-nav="wheels" hidden style="margin-top:0.6rem">Spin your wheel</a>
       </div>
 
       <!-- HOME: four clean tiles, each with a cliff note. Click to drill down. -->
@@ -66,7 +67,7 @@
           <span class="door-emoji" aria-hidden="true">🎫</span>
           <span class="door-body">
             <span class="door-tag">What's included</span><span class="door-title">Perks</span>
-            <span class="door-desc">Free $25 farm ticket, free $25 farm gift, about 40% off mobile visits.</span>
+            <span class="door-desc">Free $25 ticket, free $25 gift, about 40% off mobile, plus two prize wheels.</span>
           </span>
           <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
@@ -104,7 +105,7 @@
           <summary>How earning works</summary>
           <p>Beat a game's score in one run and Stead Spin opens on that game. Prizes are real and claimed in person at the farm, like a petting zoo visit or a farm gift. Show the screen.</p>
           <p>A Gold reward token is coming soon. Nothing to buy and nothing to connect today.</p>
-          <p><a href="#wheel" data-nav="wheel">Referral wheel →</a></p>
+          <p><a href="#wheels" data-nav="wheels">Your wheels →</a></p>
         </details>
         <p class="footer-tiny"><a href="https://code4crittersoncallapps.github.io/critters-play/" target="_blank" rel="noopener">More games in the free Critters Play arcade</a> (Ducks to Bed and more)</p>
       </section>
@@ -187,11 +188,11 @@
           <p>Joining for $50? The $50 goes toward your next mobile or farm booking.</p>
           <p>Founding Gold: the first 1,000 people who spend $1 or more get a numbered Founding card.</p>
         </details>
-        <a class="door" href="#wheel" data-nav="wheel">
+        <a class="door" href="#wheels" data-nav="wheels">
           <span class="door-emoji" aria-hidden="true">🎡</span>
           <span class="door-body">
-            <span class="door-tag">Bonus</span><span class="door-title">Referral wheel</span>
-            <span class="door-desc">Spin a prize, then share Gold with a friend.</span>
+            <span class="door-tag">2 wheels · 1 spin each a month</span><span class="door-title">Your wheels</span>
+            <span class="door-desc">The referral wheel and the Stead Spin gift wheel. Send a spin to a friend.</span>
           </span>
           <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
         </a>
@@ -250,10 +251,48 @@
         <div id="facts-list"></div>
       </section>
 
+      <!-- WHEELS: referral wheel (in-page) + gift wheel (Stead Spin). One spin each per month on this device. -->
+      <section class="panel" id="panel-wheels" aria-label="Your wheels">
+        <div class="section-head">
+          <a class="back-up" href="#perks" data-nav="perks">← Perks</a>
+          <h2>Your wheels</h2>
+          <p>Two wheels. Gold members get one spin on each every month. Prizes are claimed in person at the farm.</p>
+        </div>
+        <a class="door" href="#wheel" data-nav="wheel" id="ref-door">
+          <span class="door-emoji" aria-hidden="true">🎡</span>
+          <span class="door-body">
+            <span class="door-tag" id="ref-status">1 spin this month</span><span class="door-title">Referral wheel</span>
+            <span class="door-desc">Spin a prize, then share Gold with a friend.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <a class="door" href="https://code4crittersoncallapps.github.io/critters-on-call/giving-wheel/" target="_blank" rel="noopener" id="gift-door">
+          <span class="door-emoji" aria-hidden="true">🎁</span>
+          <span class="door-body">
+            <span class="door-tag" id="gift-status">1 spin this month</span><span class="door-title">Gift wheel · Stead Spin</span>
+            <span class="door-desc">16 chances to win farm gifts and tickets.</span>
+          </span>
+          <svg class="door-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <div class="send-card">
+          <div class="kicker">Send a wheel</div>
+          <p>Give someone their own spin. They get a link with their name on it.</p>
+          <label class="field-label" for="send-name">Their first name</label>
+          <input class="field" id="send-name" type="text" maxlength="40" autocomplete="off" placeholder="e.g. Jake" />
+          <div class="seg" role="radiogroup" aria-label="Which wheel">
+            <label><input type="radio" name="send-wheel" value="referral" checked /> Referral wheel</label>
+            <label><input type="radio" name="send-wheel" value="gift" /> Gift wheel</label>
+          </div>
+          <button class="btn btn-primary btn-block" type="button" id="send-btn">Send a wheel</button>
+          <p class="send-out" id="send-out" hidden></p>
+        </div>
+        <p class="footer-tiny">One spin per wheel per month on this device · Free Spin doesn't count · honor system</p>
+      </section>
+
       <!-- WHEEL -->
       <section class="panel" id="panel-wheel" aria-label="Referral wheel">
         <div class="section-head">
-          <a class="back-up" href="#perks" data-nav="perks">← Perks</a>
+          <a class="back-up" href="#wheels" data-nav="wheels">← Your wheels</a>
           <h2>Referral wheel</h2>
           <p>Spin for a generous prize. Then share Gold with a friend — the share link is always the generic Gold page.</p>
         </div>
@@ -264,6 +303,7 @@
           </div>
         </div>
         <button class="btn btn-primary btn-block" type="button" id="spin-btn">Spin &amp; share with a friend</button>
+        <p class="month-note" id="ref-lock-note" hidden></p>
         <div class="win-card" id="win-card" hidden>
           <div class="kicker">You won</div>
           <h3 id="win-label"></h3>
@@ -327,7 +367,24 @@
     var pretty = /^lisa$/i.test(forName) ? "Miss Lisa" : (/^miss\s/i.test(forName) ? forName : "Miss " + forName);
     document.getElementById("gift-title").textContent = "Gifted to " + pretty;
     document.getElementById("gift-note").textContent =
-      "Thank you for your review. This Gold access is yours — play, learn, spin, and share with a friend.";
+      "A gift from Sheehan Homestead. This Gold access is yours: play, learn, spin, and share with a friend.";
+    var sentWheel = params.get("wheel");
+    if (sentWheel === "referral" || sentWheel === "gift") {
+      document.getElementById("gift-title").textContent = forName + ", a Gold member sent you a spin";
+      document.getElementById("gift-note").textContent = sentWheel === "gift"
+        ? "Your spin on the Stead Spin gift wheel is ready. Prizes are claimed in person at Sheehan Homestead."
+        : "Your spin on the referral wheel is ready. Prizes are claimed in person at Sheehan Homestead.";
+      var cta = document.getElementById("gift-cta");
+      cta.hidden = false;
+      if (sentWheel === "gift") {
+        cta.removeAttribute("data-nav");
+        cta.href = "https://code4crittersoncallapps.github.io/critters-on-call/giving-wheel/";
+        cta.target = "_blank"; cta.rel = "noopener";
+      } else {
+        cta.href = "#wheel"; cta.setAttribute("data-nav", "wheel");
+      }
+      pretty = forName;
+    }
     giftBanner.classList.add("is-on");
     document.title = "Gold for " + pretty + " · Sheehan Homestead";
   }
@@ -408,10 +465,64 @@
     });
   })();
 
+  /* Monthly spin lock (device localStorage, Eastern time month). ?reset=1 clears it. */
+  var REF_KEY = "gold_referral_spin_month_v1";
+  var GIFT_KEY = "gold_gift_spin_month_v1";
+  function monthKey(d) {
+    try {
+      var p = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit" }).formatToParts(d || new Date());
+      var y = "", m = "";
+      p.forEach(function (x) { if (x.type === "year") y = x.value; if (x.type === "month") m = x.value; });
+      return y + "-" + m;
+    } catch (e) { var n = d || new Date(); return n.getFullYear() + "-" + String(n.getMonth() + 1).padStart(2, "0"); }
+  }
+  function nextMonthName() {
+    var n = new Date(); var d = new Date(n.getFullYear(), n.getMonth() + 1, 1);
+    return d.toLocaleString("en-US", { month: "long" });
+  }
+  function usedThisMonth(key) { try { return localStorage.getItem(key) === monthKey(); } catch (e) { return false; } }
+  function markUsed(key) { try { localStorage.setItem(key, monthKey()); } catch (e) {} }
+  if (params.get("reset") === "1") { try { localStorage.removeItem(REF_KEY); localStorage.removeItem(GIFT_KEY); } catch (e) {} }
+  function syncWheelStatus() {
+    var r = usedThisMonth(REF_KEY), g = usedThisMonth(GIFT_KEY);
+    document.getElementById("ref-status").textContent = r ? "Spun this month · next in " + nextMonthName() : "1 spin this month";
+    document.getElementById("gift-status").textContent = g ? "Spun this month · next in " + nextMonthName() : "1 spin this month";
+    document.getElementById("gift-door").classList.toggle("is-used", g);
+    document.getElementById("ref-door").classList.toggle("is-used", r);
+  }
+  window.GoldWheels = { used: usedThisMonth, mark: markUsed, sync: function () { syncWheelStatus(); }, REF_KEY: REF_KEY, GIFT_KEY: GIFT_KEY, nextMonthName: nextMonthName };
+  syncWheelStatus();
+  document.getElementById("gift-door").addEventListener("click", function (e) {
+    if (usedThisMonth(GIFT_KEY)) {
+      e.preventDefault();
+      toast("Gift wheel used this month · next in " + nextMonthName());
+      return;
+    }
+    markUsed(GIFT_KEY);
+    setTimeout(syncWheelStatus, 50);
+  });
+
+  /* Send a wheel: ?for=Name&wheel=referral|gift */
+  document.getElementById("send-btn").addEventListener("click", async function () {
+    var raw = document.getElementById("send-name").value.trim().slice(0, 40);
+    var out = document.getElementById("send-out");
+    if (!raw) { toast("Add their first name"); document.getElementById("send-name").focus(); return; }
+    var which = (document.querySelector('input[name="send-wheel"]:checked') || {}).value || "referral";
+    var url = genericShareUrl() + "?for=" + encodeURIComponent(raw) + "&wheel=" + which;
+    var text = raw + ", you've got a spin on the Sheehan Homestead " + (which === "gift" ? "gift wheel" : "referral wheel") + ". Prizes are claimed at the farm.";
+    out.hidden = false;
+    out.textContent = url;
+    try {
+      if (navigator.share) { await navigator.share({ title: "A spin for " + raw, text: text, url: url }); toast("Sent"); return; }
+    } catch (e) { if (e && e.name === "AbortError") return; }
+    try { await navigator.clipboard.writeText(url); toast("Link copied · paste it in a text"); }
+    catch (e2) { prompt("Copy this link:", url); }
+  });
+
   /* Tabs */
-  var panels = ["home", "games", "lessons", "perks", "giving", "hold", "facts", "wheel"];
+  var panels = ["home", "games", "lessons", "perks", "giving", "hold", "facts", "wheels", "wheel"];
   /* Sub-panels light up their parent tab */
-  var NAV_PARENT = { hold: "lessons", facts: "lessons", wheel: "perks" };
+  var NAV_PARENT = { hold: "lessons", facts: "lessons", wheels: "perks", wheel: "perks" };
   function showPanel(id) {
     if (panels.indexOf(id) < 0) id = "home";
     panels.forEach(function (p) {
@@ -433,7 +544,7 @@
       if (!id) return;
       e.preventDefault();
       /* keep ?for= in search; panel lives in hash */
-      var qs = forName ? ("?for=" + encodeURIComponent(params.get("for"))) : "";
+      var qs = forName ? ("?for=" + encodeURIComponent(params.get("for")) + (params.get("wheel") ? "&wheel=" + encodeURIComponent(params.get("wheel")) : "")) : "";
       history.replaceState(null, "", qs + "#" + id);
       showPanel(id);
     });
@@ -608,8 +719,19 @@
     return Math.floor(Math.random() * n);
   }
 
+  var refLockNote = document.getElementById("ref-lock-note");
+  var freeRedo = false;
+  function lockReferral() {
+    spinBtn.disabled = true;
+    spinBtn.classList.add("is-locked");
+    spinBtn.textContent = "Next spin in " + window.GoldWheels.nextMonthName();
+    refLockNote.hidden = false;
+    refLockNote.textContent = "You've had this month's referral spin. Send a wheel to a friend while you wait.";
+  }
+  if (window.GoldWheels.used(window.GoldWheels.REF_KEY)) lockReferral();
   spinBtn.addEventListener("click", function () {
     if (spinning) return;
+    if (!freeRedo && window.GoldWheels.used(window.GoldWheels.REF_KEY)) { lockReferral(); return; }
     spinning = true;
     spinBtn.disabled = true;
     spinBtn.classList.add("is-locked");
@@ -630,13 +752,15 @@
       document.getElementById("win-note").textContent = prize.note;
       winCard.hidden = false;
       if (prize.kind === "again") {
+        freeRedo = true;
         spinBtn.disabled = false;
         spinBtn.classList.remove("is-locked");
         spinBtn.textContent = "Spin again (free)";
       } else {
-        spinBtn.disabled = false;
-        spinBtn.classList.remove("is-locked");
-        spinBtn.textContent = "Spin again";
+        freeRedo = false;
+        window.GoldWheels.mark(window.GoldWheels.REF_KEY);
+        window.GoldWheels.sync();
+        lockReferral();
       }
       /* Nudge share after a win */
     }, ms);

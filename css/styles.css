@@ -317,3 +317,15 @@ p { margin: 0; }
 .strip .kicker { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); }
 .strip p { margin: 0.25rem 0 0; font-size: 0.9rem; line-height: 1.45; color: var(--fg); }
 .bottom-nav-inner { grid-template-columns: repeat(5, 1fr); }
+
+/* v5 two wheels + send a wheel */
+.door.is-used { opacity: 0.7; }
+.send-card { background: var(--surface); border: 1px solid var(--gold-ring); border-radius: var(--radius); padding: 0.9rem; margin: 0.6rem 0; }
+.send-card .kicker { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); }
+.send-card p { margin: 0.25rem 0 0.6rem; font-size: 0.9rem; color: var(--muted); line-height: 1.4; }
+.field-label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--muted); margin-bottom: 0.25rem; }
+.field { width: 100%; min-height: 2.75rem; border-radius: 0.7rem; border: 1px solid var(--border); background: var(--surface-2); color: var(--fg); padding: 0 0.8rem; font: inherit; font-size: 1rem; }
+.seg { display: flex; gap: 0.5rem; margin: 0.6rem 0; flex-wrap: wrap; }
+.seg label { flex: 1; display: flex; align-items: center; gap: 0.4rem; font-size: 0.88rem; padding: 0.55rem 0.7rem; border: 1px solid var(--border); border-radius: 0.7rem; background: var(--surface-2); cursor: pointer; }
+.send-out { font-size: 0.75rem; word-break: break-all; color: var(--accent); margin: 0.5rem 0 0 !important; }
+.month-note { font-size: 0.85rem; color: var(--muted); text-align: center; margin: 0.5rem 0 0; }
