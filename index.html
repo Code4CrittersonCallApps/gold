@@ -10,6 +10,12 @@
 <meta property="og:image" content="assets/gold-card.jpg" />
 <title>Gold · Sheehan Homestead</title>
 <link rel="icon" type="image/png" href="assets/pyrenees-logo.png" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Gold" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
@@ -89,7 +95,8 @@
         </div>
         <p class="footer-tiny">Sheehan Homestead · Critters on Call · In Critters We Trust<br />
           <a href="tel:9142631311">914-263-1311</a> ·
-          <a href="https://www.sheehanhomestead.com" target="_blank" rel="noopener">sheehanhomestead.com</a>
+          <a href="https://www.sheehanhomestead.com" target="_blank" rel="noopener">sheehanhomestead.com</a> ·
+          <a href="privacy/">Privacy</a>
         </p>
       </section>
 
@@ -347,6 +354,11 @@
 </div>
 <div class="share-toast" id="share-toast" role="status">Link copied</div>
 
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js", { scope: "./" }).catch(function () {}); });
+}
+</script>
 <script src="js/gold-config.js?v=4"></script>
 <script>
 (function () {

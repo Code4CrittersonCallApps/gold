@@ -1,0 +1,19 @@
+{
+  "id": "/gold/",
+  "name": "Critters on Call Gold",
+  "short_name": "Gold",
+  "description": "Farm games, animal lessons and member perks from Critters on Call at Sheehan Homestead in Callahan, FL.",
+  "start_url": "/gold/",
+  "scope": "/gold/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#c9a227",
+  "background_color": "#14120f",
+  "lang": "en-US",
+  "categories": ["education", "kids", "games"],
+  "icons": [
+    { "src": "/gold/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/gold/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/gold/assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
