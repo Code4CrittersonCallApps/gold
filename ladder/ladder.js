@@ -212,6 +212,7 @@
   };
   V.box = function () {
     return head("The boxed kit", "A physical learning kit with app access inside. Concept only; nothing ordered.", back("home", "Ladder")) +
+      '<div class="card"><div class="kick">Working brand</div><h3>STEM on Call x Critters on Call (TBD)</h3></div>' +
       '<div class="card"><div class="kick">What is inside</div><div class="chips">' + chip("🪪 QR access card") + chip("📰 Syllabus mini-magazine") + chip("🧪 Simple lab") + chip("👕 T-shirt or sticker") + "</div></div>" +
       '<div class="card"><div class="kick">Shipped box · eBay & cross-state</div><h3>The pretty box</h3><p>Printed mailer box · laminated QR / access-code card · syllabus mini-magazine · simple lab · merch slot (t-shirt or sticker).</p></div>' +
       '<div class="card"><div class="kick">Marketplace pickup</div><h3>The upcycled kit</h3><p>Stamped kraft box · mason-jar vacuum lab · thrifted building blocks · rubber stamps · same QR card and syllabus.</p></div>' +
@@ -230,8 +231,7 @@
       '<div class="card"><div class="kick">How you become one</div><p>Refer families, host a party, bring us to your school or church. ' + blank("___") + " referrals makes you an Ambassador.</p></div>" +
       '<div class="card"><div class="kick">Your better wheel</div><h3>Ambassador wheel</h3><p>' + blank("2") + " spins a month instead of 1, plus bigger slices (like a free party add-on or a Gold card to give away).</p></div>" +
       tile({ href: GOLD + "#wheels", emoji: "🎡", tag: "Today", title: "Gold wheels", note: "Your regular referral and gift wheels." }) +
-      '<div class="card"><div class="kick">Review rule</div><p>This level is never earned by leaving a review, and never tied to a star rating. Google bans rewards for reviews. Anyone can leave an honest review, with no reward.</p><p><a href="' + GOOGLE_REVIEWS + '" target="_blank" rel="noopener">Google review policy →</a></p></div>' +
-      '<p class="note">Naming note: "Five-Star" can sound like a 5-star review is required. Use it as a level name only, or call it Ambassador.</p>';
+      '';
   };
   var PILOTS = ["Godson Daniel", "Emily & Jeremy's kids", "Paige Courtney's kid", "Nathan", "Amy & Bill's family"];
   V.beta = function () {

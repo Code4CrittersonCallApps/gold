@@ -1,5 +1,7 @@
 # Critters on Call STEM Kit: box concept (concept only, nothing ordered)
 
+**Working brand:** STEM on Call x Critters on Call (TBD)
+
 Prepared Oct 19, 2026 (ET). Prices were read from supplier pages and search results that night and will change. Check each one before ordering. Nothing has been bought.
 
 ## Two versions
@@ -50,4 +52,4 @@ Thrifted bricks: describe them as "used building bricks" and don't use LEGO mark
 
 ### Google reviews (applies to every tier)
 - No rewards of any kind for reviews, including discounts, free items, spins, shirts or levels. Don't ask only happy customers for reviews. Asking for an honest review with no reward is fine. Source: https://support.google.com/contributionpolicy/answer/7400114?hl=en
-- Fix to flag: the free Stead Spin page shows "Enjoyed your spin? Leave a 5-star Google review" right after a prize. Suggested change: "Had a good visit? We'd love an honest review" (no star ask, not next to a prize).
+- Done Oct 19: every review ask and review link was removed from all wheel pages (Stead Spin, Sampson, high-score draft, event wheels, spin page). Reviews are asked for by phone only, and the link is sent only if the person agrees.
