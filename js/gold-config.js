@@ -1,8 +1,5 @@
 /* Gold Games config. Edit this list to swap games; the page renders it.
-   Rules: 3 core games plus 1 swap-in slot. To fill the slot, give it an href and set status:"live".
-   Moved out of Gold Games (still live in the free Critters Play hub):
-     - Critter Match  -> Gold Lessons (matching lesson)
-     - Ducks to Bed   -> free hub only: https://code4crittersoncallapps.github.io/critters-play/ducks-to-bed.html */
+   Three live games only. Critter Match lives under Lessons. Ducks to Bed is free Critters Play. */
 window.GOLD_PLAY = "https://code4crittersoncallapps.github.io/critters-play/";
 window.GOLD_GAMES = [
   {
@@ -37,16 +34,5 @@ window.GOLD_GAMES = [
     emoji: "🦆",
     tone: "focus",
     status: "live"
-  },
-  {
-    id: "swap",
-    title: "Coming soon",
-    problem: "Swap-in slot",
-    solves: "A new Gold game rotates in here",
-    note: "Members get the next game first.",
-    href: null,
-    emoji: "✨",
-    tone: "soon",
-    status: "soon"
   }
 ];
