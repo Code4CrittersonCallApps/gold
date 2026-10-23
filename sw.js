@@ -2,13 +2,13 @@
    Bump VERSION whenever the shell list changes. Old caches are deleted on activate.
    HTML: network-first (so updates show up right away), cached copy only when offline.
    CSS/JS/images: stale-while-revalidate, keyed by full URL, so ?v= cache-busting still works. */
-var VERSION = "gold-v1";
+var VERSION = "gold-v2";
 var SHELL = VERSION + "-shell";
 var RUNTIME = VERSION + "-runtime";
 var SHELL_URLS = [
   "./",
-  "css/styles.css?v=5",
-  "js/gold-config.js?v=4",
+  "css/styles.css?v=7",
+  "js/gold-config.js?v=7",
   "manifest.webmanifest",
   "assets/pyrenees-logo.png",
   "assets/gold-card.jpg",
